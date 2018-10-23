@@ -1,12 +1,10 @@
 public class Teacher extends Person {
     private String subject;
     private String Title;
-    private String familyName;
-    public Teacher(String subject, String Title, String familyName) {
-        super(subject, Title);
+    public Teacher(String subject, String Title, String firstName, String familyName) {
+        super(firstName, familyName);
         this.subject = subject;
         this.Title = Title;
-        this.familyName = familyName;
     }
     public String getSubject() {
         return subject;
@@ -21,6 +19,6 @@ public class Teacher extends Person {
         Title = title;
     }
     public String toString() {
-        return "My name is " + Title + "." + familyName + ".";
+        return "My name is " + Title + "." + getFamilyName() + ".";
     }
 }

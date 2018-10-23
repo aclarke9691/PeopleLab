@@ -2,8 +2,6 @@ public class Student extends Person {
     private double GPA;
     private int OSIS;
     private String major;
-    private String firstName;
-    private String familyName;
     public Student(double GPA, int OSIS, String major, String firstName, String familyName) {
         super(firstName, familyName);
         this.GPA = GPA;
@@ -29,6 +27,6 @@ public class Student extends Person {
         this.major = major;
     }
     public String toString() {
-        return "My name is " + firstName + familyName + ".";
+        return "My name is " + getFirstName() +  getFamilyName() + ".";
     }
 }
