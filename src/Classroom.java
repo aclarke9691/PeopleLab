@@ -21,7 +21,10 @@ public class Classroom {
         this.teacher = teacher;
     }
     public String getSubject() {
-        return "My subject is " +
+        return teacher.getSubject();
+    }
+    Student[] student = {}
+    public double classAverage() {
+
     }
 }
-aaaa

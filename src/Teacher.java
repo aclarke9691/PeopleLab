@@ -19,6 +19,6 @@ public class Teacher extends Person {
         Title = title;
     }
     public String toString() {
-        return "My name is " + Title + "." + getFamilyName() + ".";
+        return Title + "." + getFamilyName();
     }
 }

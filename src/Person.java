@@ -17,8 +17,7 @@ public class Person {
         this.familyName = familyName;
     }
     public boolean equals(Person person) {
-        if(this.firstName.equals(person.getFirstName())&& this.familyName.equals(person.getFamilyName()))
-        {
+        if(this.firstName.equals(person.getFirstName())&& this.familyName.equals(person.getFamilyName())) {
             return true;
         }
         else
