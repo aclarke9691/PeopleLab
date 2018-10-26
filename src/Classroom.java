@@ -23,8 +23,16 @@ public class Classroom {
     public String getSubject() {
         return teacher.getSubject();
     }
-    Student[] student = {}
     public double classAverage() {
-
+        for (Student cur : students) {
+            for (int i = 0; i <= students.length; i++) {
+                double sum = 0;
+                sum = sum + Student.getGPA();
+            }
+            return sum/students.length;
+        }
+    }
+    public String printClass() {
+        for (Student )
     }
 }
