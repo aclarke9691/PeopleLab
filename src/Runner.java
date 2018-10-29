@@ -14,8 +14,8 @@ public class Runner {
         System.out.println("The teacher is Mr.Levin and he teaches Computer Science.");
         System.out.println("The class's average GPA is " + classroom.classAverage() + ".");
     }
-    public static String randomStudent() {
-        Student student = new Student(randomFirstName(), randomFamilyName(), (Math.random() * 100000000) + 200000000; (Math.random() * 101.00) + 0.00; randomMajor());
+    public static Student randomStudent() {
+        Student student = new Student(randomFirstName(), randomFamilyName(), (Math.random() * 101.00) + 0.00, (Math.random() * 100000000) + 200000000, randomMajor());
         return student;
     }
     public static String randomFirstName() {
