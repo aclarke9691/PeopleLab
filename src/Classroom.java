@@ -1,36 +1,26 @@
 public class Classroom {
     private Student[] students;
     private Teacher teacher;
-    public Classroom(String Student[], String Teacher) {
+    public Classroom(Student[] students, Teacher teacher) {
         this.students = students;
-        this.teacher = teacher;
-    }
-    public Student[] getStudents() {
-        return students;
-    }
-
-    public void setStudents(Student[] students) {
-        this.students = students;
-    }
-
-    public Teacher getTeacher() {
-        return teacher;
-    }
-
-    public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
     public String getSubject() {
         return teacher.getSubject();
     }
-    public void double classAverage() {
+    public double classAverage() {
+        double sum = 0;
         for (Student cur : students) {
-                double sum = 0;
                 sum = sum + cur.getGPA();
-                double average = sum/students.length;
         }
+        double average = sum/students.length;
+        return average;
     }
-    public String printClass() {
-        for (Student )
+    public void printClass() {
+        System.out.println(teacher.toString());
+        System.out.println(teacher.getSubject());
+        for (Student cur: students) {
+            System.out.println(cur.toString() + "\n" + "The student's GPA is " + cur.getGPA() + "." + "\n" + "The student's OSIS is " + cur.getOSIS() + "." + "\n" + "Major: " + cur.getMajor());
+        }
     }
 }

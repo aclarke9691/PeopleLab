@@ -1,8 +1,8 @@
 public class Student extends Person {
     private double GPA;
-    private int OSIS;
+    private double OSIS;
     private String major;
-    public Student(double GPA, int OSIS, String major, String firstName, String familyName) {
+    public Student(String firstName, String familyName, double GPA, double OSIS, String major) {
         super(firstName, familyName);
         this.GPA = GPA;
         this.OSIS = OSIS;
@@ -14,10 +14,10 @@ public class Student extends Person {
     public void setGPA(double GPA) {
         this.GPA = GPA;
     }
-    public int getOSIS() {
+    public double getOSIS() {
         return OSIS;
     }
-    public void setOSIS(int OSIS) {
+    public void setOSIS(double OSIS) {
         this.OSIS = OSIS;
     }
     public String getMajor() {
