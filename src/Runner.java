@@ -15,7 +15,7 @@ public class Runner {
         System.out.println("The class's average GPA is " + classroom.classAverage() + ".");
     }
     public static Student randomStudent() {
-        Student student = new Student(randomFirstName(), randomFamilyName(), (Math.random() * 101.00) + 0.00, (Math.random() * 100000000) + 200000000, randomMajor());
+        Student student = new Student(randomFirstName(), randomFamilyName(), (Math.random() * 101.00) + 0.00, (int) ((Math.random() * 100000000) + 200000000), randomMajor());
         return student;
     }
     public static String randomFirstName() {

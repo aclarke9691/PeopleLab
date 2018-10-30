@@ -1,10 +1,8 @@
-import java.math.BigInteger;
-
 public class Student extends Person {
     private double GPA;
-    private double OSIS;
+    private int OSIS;
     private String major;
-    public Student(String firstName, String familyName, double GPA, double OSIS, String major) {
+    public Student(String firstName, String familyName, double GPA, int OSIS, String major) {
         super(firstName, familyName);
         this.GPA = GPA;
         this.OSIS = OSIS;
@@ -16,10 +14,10 @@ public class Student extends Person {
     public void setGPA(double GPA) {
         this.GPA = GPA;
     }
-    public double getOSIS() {
+    public int getOSIS() {
         return OSIS;
     }
-    public void setOSIS(double OSIS) {
+    public void setOSIS(int OSIS) {
         this.OSIS = OSIS;
     }
     public String getMajor() {
